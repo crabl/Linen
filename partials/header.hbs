@@ -10,8 +10,12 @@
         {{/if}}
 
         <!-- Title -->
-        <div id="site-title" class="h1">
+        <div id="site-title" class="h1 text-center">
             <a href="{{@blog.url}}" rel="nofollow">{{@blog.title}}</a>
+        </div>
+
+        <div id="description" class="h5 text-center">
+            <p>{{@blog.description}}</p>
         </div>
 
         <!-- Static Menu (Dynamic menu not yet available in Ghost 0.3) -->

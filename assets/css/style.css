@@ -595,7 +595,7 @@ probably best not to use it. I mean, were you going to anyway? */
 BUTTONS
 *********************/
 .button, .button:visited {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   border: 1px solid #060606;
   border-top-color: #151515;
   border-left-color: #151515;
@@ -655,7 +655,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "Merriweather", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
   color: #565656; }
@@ -689,7 +689,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -1231,3 +1231,9 @@ be set to display none.
   .respond-form,
   nav {
     display: none; } }
+#container {
+  float: none;
+  margin: 0 auto; }
+
+code {
+  font-family: "Inconsolata", monospace; }

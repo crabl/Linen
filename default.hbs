@@ -26,6 +26,9 @@
     <script type="text/javascript" src="{{asset '/js/libs/modernizr.custom.min.js'}}"></script>
 
     <!-- Include the main stylesheet-->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" id="linen-stylesheet-css" href="{{asset 'css/style.css'}}" type="text/css" media="all" />
 
     <!--[if lt IE 9]>
@@ -42,7 +45,7 @@
 
 <body class="{{body_class}}">
 
-    <div id="container">
+    <div id="container" class="sevencol">
 
         {{! Output the content of the header partial template }}
         {{> header}}
@@ -53,14 +56,9 @@
             <div id="inner-content" class="wrap clearfix">
 
                 {{! The main section uses eight columns in the grid framework }}
-                <main id="main" class="eightcol first clearfix" role="main">
+                <main id="main" class="twelvecol clearfix first" role="main">
                     {{{body}}}
                 </main> <!-- end #main -->
-
-                {{! The sidebar fills in the remaining four columns }}
-                <aside id="sidebar-main" class="sidebar fourcol clearfix" role="complementary">
-                    {{> sidebar}}
-                </aside>
 
             </div> <!-- end #inner-content -->
 
@@ -68,7 +66,7 @@
 
         <footer class="footer" role="contentinfo">
             <div id="inner-footer" class="wrap clearfix">
-                <p class="source-org copyright">© 2013 <a href="http://themespectre.com">Theme Spectre, LLC.</a></p>
+                <p class="source-org copyright">© 2014 <a href="http://crabl.net">Chris Rabl</a></p>
             </div> <!-- end #inner-footer -->
         </footer> <!-- end footer -->
 

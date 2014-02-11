@@ -121,3 +121,12 @@ be set to display none.
 @media print {
 	@import "print";
 }
+
+#container {
+	float: none;
+	margin: 0 auto;
+}
+
+code {
+	font-family: $code;
+}
